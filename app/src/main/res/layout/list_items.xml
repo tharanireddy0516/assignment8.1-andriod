@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Relative layout is one of the types of layout
+It enables to specify the location of child objects relative to each other
+layout_width indicates the width of the relative layout
+layout_Height indicates the height of the relative layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+<!--here i created my own layout for changing list view text color-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--TextView is one of component of palette to display anything on layout
+    width indicates the width of the TextView
+    Height indicates the height of the TextView
+    wraps content wraps the enter content
+    padding sets the space of elements-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:gravity="center_vertical"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingStart"
+        android:paddingRight="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:id="@+id/tv"
+        tools:ignore="NewApi" />
+
+</RelativeLayout><!--relative layout ends here-->

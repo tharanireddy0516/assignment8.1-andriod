@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Relative layout is one of the types of layout
+It enables to specify the location of child objects relative to each other
+layout_width indicates the width of the relative layout
+layout_Height indicates the height of the relative layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.tharani.sortinglist.MainActivity"
+    >
+   <!--Button is a widget or view
+     wraps content matches the content
+     layout_alignParentTop,layout_centerHorizontal,layout_marginTop,layout_marginLeft,
+     layout_marginRight indicates the directions of text-->
+    <Button
+        android:id="@+id/ascendingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/ascending" />
+
+    <Button
+        android:id="@+id/descendingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/descending" />
+      <!--Android ListView is a view which groups several items and display them in vertical scrollable list.
+       The list items are automatically inserted to the list using an Adapter that pulls content from a source such as an array or database.
+        android:divider is drawable or color to draw between list items
+        divider height is height of the divider-->
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#fff"
+        android:dividerHeight="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/ascendingBtn" />
+</RelativeLayout><!--relative layout ends here-->
+
+
+
+
+
+
+
